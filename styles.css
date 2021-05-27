@@ -1,0 +1,167 @@
+body { margin-top: 5.46em; }
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    width: 100%;
+}
+
+.ppal-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    margin: 0;
+    display: inline-block;
+}
+#logo span {
+    position: absolute;
+    left: -99999px;
+}
+
+
+/* Image logo */
+#image {
+    margin: .3em 0 .2em .5em;
+    width: 2em;
+}
+
+
+/* Toggle button */
+.toggle-btn {
+    width: 20%;
+    text-align: center;
+}
+#btn {
+    background: transparent;
+    border: none;
+}
+.fa-bars {
+    font-size: 1.5em;
+    cursor: pointer;
+
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -o-transition: all .8s;
+    transition: all .8s;
+}
+
+
+/* All the lists */
+ul { list-style: none; }
+
+
+/* Links of the navbar */
+.links {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    font-size: .8em;
+    font-family: 'Press Start 2P', cursive;
+    height: 0em;
+    overflow: hidden;
+    transition: all .8s;
+}
+
+.links li {
+    margin: .5em 1em;
+    padding-top: 1em;
+}
+.links li:last-child {
+    padding-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+.links a:hover {
+    color: #426cdd;
+    margin-left: 1em;
+}
+
+.show-links {
+    height: 11.45em;
+    border-bottom: 1px solid #ffa500;
+}
+
+
+/* Social medias' logos */
+.social { display: none; }
+
+
+/* MAIN */
+main {
+    background: url('https://tutorialesenlinea.es/uploads/posts/2020-01/1578660692_imagen-generica-del-sistema_android_tutoriales_en_linea.webp') no-repeat;
+    background-size: contain;
+    height: 100vw;
+}
+
+
+/* Media querie since 768px */
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .links {
+        position: relative;
+        overflow: initial;
+        display: flex;
+        align-items: center;
+    }
+    .links li { padding: 0; }
+    .links li:last-child { padding-bottom: 0; }
+
+    .links a:hover {
+        color: #426cdd;
+        margin-left: 0;
+    }
+
+    .social {
+        display: flex;
+        justify-content: space-evenly;
+        width: 20%;
+    }
+    .fab {
+        font-size: 1.3em;
+        cursor: pointer;
+
+        -webkit-transition: all .3s;
+        -moz-transition: all .3s;
+        -o-transition: all .3s;
+        transition: all .3s;
+    }
+
+    .fa-codepen:hover { color: #ff3c41; }
+    .fa-facebook-square:hover { color: #3b5998; }
+    .fa-instagram:hover { color: #833ab4; }
+    .fa-linkedin:hover { color: #0077b5; }
+    .fa-twitter-square:hover { color: #1da1f2; }
+
+    .toggle-btn { display: none; }
+}
+
+@media only screen and (min-width: 992px) {
+    .links { font-size: 1em; }
+
+    .social {
+        display: flex;
+        justify-content: center;
+        width: 20%;
+    }
+    .fab {
+        font-size: 1.5em;
+        margin: 0 .4em;
+    }
+}
